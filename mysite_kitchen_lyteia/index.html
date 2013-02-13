@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="css/main.css">
+<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 <title>Heat Check</title>
 </head>
 <body>
 <header id="header_wrap"><!-- open header -->
-	<h1><a href="index.html"><img src= "images/logo.jpg" alt="basic logo." width="250" height="167" title="basic logo"/></a></h1><!-- This is the logo -->
-<nav> <!-- open nav -->
+	<h1 id="logo"><a href="index.html"><img src= "images/logo.png" alt="basic logo." width="250" height="167" title="basic logo"/></a></h1><!-- This is the logo -->
+<nav id="nav"> <!-- open nav -->
 	<ul>
 		<li><a href="index.html" id="active">Home</a></li>
 		<li><a href="about.html">About</a></li>
@@ -15,16 +17,19 @@
 	</ul>
 </nav> <!-- close nav -->
 </header><!-- end header wrap -->
+<div id="wrapper"> <!-- wrapper open -->
 <section><!-- open section -->
 <h2>Only The BEST</h2>
+<div class="video_style">
 		<video controls="controls" width="640" height="480">
 			<source src="video/heat_check.mp4" type="video/mp4" />
 			<source src="video/heat_check.webm" type="video/webm" />
 			<source src="video/heat_check.ogv" type="video/ogg" />
 <a href="heat_check.m4v">Download the Video File (.m4v)</a>
 		</video>
+		</div>
 		<p>Welcome to <strong>Heat Check</strong>, where our aim is to provide a central repository for the hottest sneakers out. Here, you will find an up-to-date listing of all the sneakers that are not available in stores anymore.Check back often and come back soon.</p>
-<article>
+<article class="kicks">
 	<h3>Featured Kicks</h3>
 <table id="kicklist">
 	<caption>We've got the kicks you need!</caption>
@@ -91,11 +96,20 @@
 		<td>12</td>
 	</tr>
 </table> 
+<h3> Top 3 Sneakers-2012 </h3>
+
+<ul id="kick_list">
+
+	<li>Cement 4</li>
+	<li>Jeremy Scott Leopard Adidas</li>
+	<li>Galaxy Foamposites</li>
+
+</ul>
 </article> 
 </section> 
 <aside>
 	<h3><strong>Follow Us</strong></h3>
-		<ul>
+		<ul class="gallery">
 			<li><img src= "images/twitter_logo.png" title="Twitter Logo" alt="Twitter"/></li>
 			<li><img src= "images/facebook_logo.png" title="Facebook Logo" alt="Facebook"/></li>
 			<li><img src= "images/instagram.png" title="Instagram Logo" alt="Instagram"/></li>
@@ -104,5 +118,6 @@
 <footer><!-- footer -->
     <p>Copyright &copy; <strong>Heat Check</strong> | New York, Ny USA | <a href="contact.html">contact us</a></p>
 </footer><!-- footer end -->
+</div><!-- wrapper closed -->
 </body> 
 </html>
