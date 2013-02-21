@@ -181,7 +181,12 @@ list-style: none;
 #kick_list li{
 list-style-image: url('../images/bullet.gif');
 margin: 10px;
-padding: 5px ;
+padding: 5px;
+}
+
+#kick_list li img{
+max-width: 100%;
+
 }
 
 aside{
@@ -396,26 +401,26 @@ color: #f5ee30;
 /*----- Media Queries -----*/
 
 /* Tablet Portrait size to standard 960 (device and browsers)*/
-@meida screen and (min-width:768px) and (max-width:959px){
+@meida screen and(min-width:768px)and(max-width:959px){
+
 #wrapper{
-background-color: red;
-}
+background-color: #509ccc;}
 
 }
 
 /* Mobile Landscape size to Tablet Portrait (device and browsers)*/
-@meida only screen and (min-width:480px) and (max-width:767px){
+@meida only screen and(min-width:480px)and(max-width:767px){
+
 #wrapper{
-background-color: blue;
-}
+background-color: #ff7743;}
 }
 
 
 /* Mobile Portrait size to Mobile Landscape (device and browsers)*/
-@meida only screen and (max-width:479px){
+@meida only screen and(max-width:479px){
+
 #wrapper{
-background-color: green;
-}
+background-color: #d593ff;}
 
 
 }
