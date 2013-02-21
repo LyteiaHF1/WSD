@@ -402,23 +402,51 @@ color: #f5ee30;
 
 /* Tablet Portrait size to standard 960 (device and browsers)*/
 @media screen and(min-width:768px)and(max-width:959px){
-
+html{
+width: 100%;
+}
 #wrapper{
-background-color: #509ccc;}
+background-color:#232323;
+}
+nav {
+display: block;
+position: static;
+background-color: #515673;
+}
+
 
 }
 
 /* Mobile Landscape size to Tablet Portrait (device and browsers)*/
 @media only screen and(min-width:480px)and(max-width:767px){
-
-#wrapper{
-background-color: #ff7743;}
+html{
+width: 100%;
 }
+#wrapper{
+background-color:#232323;
+}
+nav {
+display: block;
+position: static;
+background-color: #515673;
+}
+
+
 
 
 /* Mobile Portrait size to Mobile Landscape (device and browsers)*/
-@media only screen and(max-width:479px)
-
-
-
+@media only screen and(max-width:479px){
+html{
+width: 100%;
 }
+#wrapper{
+background-color:#232323;
+}
+nav {
+display: block;
+position: static;
+background-color: #515673;
+}
+
+
+
