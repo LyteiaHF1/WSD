@@ -1,46 +1,49 @@
 /*----- Document -----*/
 html{
 background-image: url('../images/bg.jpg');
-width: 960px;
-margin: 20px auto;
+max-width: 960px;
+margin: 1.25em auto;
 overflow:hidden;
 overflow-x: auto;
 overflow-y: auto;
 text-align:center;
+font: .8125em/1 verdana, arial, sans-serif;
+color: #424242;
 }
 
 #wrapper{ 
 margin: 0 auto;
-width: 960px;
+width: 100%;
 background-image: url('../images/content_bg.png');
 margin: 5px;
 padding: 5px;
 }
 
-body{
+/*body{
 font: .8125em/1 verdana, arial, sans-serif;
 color: #424242;
-}
+}*/
 
 /*----- Header -----*/
 header{
 overflow: hidden;
 width: 100%;
-margin: 0 0 20px 0;
-padding: 35px 0 15px 0;
+margin: 0 0 1.25em 0;
+padding: 2.2em 0 0.95em 0;
 background: #232323 url('../images/header.jpg') no-repeat;
-/*border-bottom: 1px solid #ccc;*/
+border-bottom: 1px solid #ccc;
 }
 
 #header_wrap{
 overflow: hidden;
-width: 960px;
+width: 100% /*960px*/;
 margin: auto;
+background-size: 100%;
 }
 
 #logo{
 float: left;
-text-indent: -999999px;
+text-indent: 62499.938em/*-999999px*/;
 }
 
 /*----- Navigation -----*/
@@ -56,7 +59,7 @@ background-color:#E8E8E8;
 
 #nav ul li{
 float: left;
-width: 100px;
+width: 10%;/*100px;*/
 font:bold 11px/30px Verdana, Arial, Helvetica, sans-serif;
 text-transform:uppercase;
 padding:0 34px;
@@ -88,12 +91,12 @@ text-align: justify;
 -webkit-column-count: 3;
 -webkit-column-gap: 24px;
 -webkit-column-rule: 1px solid #c4c8cc;
-padding: 10px;
+padding:1.041667% /*10px*/;
 }
 
 
 aside h3{
-text-shadow: 2px 2px 2px #111;
+text-shadow: 0.125em 0.125em 0.125em #111;
 }
 
 h1, h2, h3{
@@ -105,8 +108,8 @@ text-align: center;
 }
 
 p{
-margin: 10px;
-padding: 5px;
+margin:1.041667%;/*10px;*/
+padding:0.520833%;/*5px;*/
 }
 
 li{
@@ -117,16 +120,16 @@ list-style-type: none;
 background-color: #707070;
 margin: auto;
 opacity: 0.7;
-width: 800px;
+width: 80%;
 }
 
 iframe{
 margin: auto;
 border: 1px solid #f5ee30;
-height: 380px;
-width: 480px;
-padding-top: 5px;
-padding-bottom: 5px;
+/*height: 380px*/;
+width: 50% /*480px*/;
+padding-top: 1.041666666667%;/*5px;*/
+padding-bottom:1.041666666667%;/* 5px;*/
 }
 
 /*video{
@@ -139,27 +142,39 @@ margin-bottom: 25px;*/
 
 
 #gallery ul{
-width: 800px;
+width: 29.666667%/*267px*/;
+/*width: 80%;/*800px;*/
 }
 
 #gallery li{
+width: 20%;
 float: left;
 display: block;
-padding: 2px;
+padding:0.25%; /*2px;*/
+}
+
+#gallery li img{
+max-width: 100%;
 }
 
 .other{
 clear: both;
-padding: 10px;
+padding: 1.041667%;/*10px;*/
 }
 
+
 .main_image{
+width: 87.361111%/*646px*/;
 text-align: center;
 }
 
+.main_image img{
+max-width: 100%;
+}
+
 #kick_list{
-margin-left: 0px;
-padding-left: 0px;
+margin-left: 0;
+padding-left: 0;
 list-style: none;
 }
 
@@ -171,7 +186,7 @@ padding: 5px ;
 
 aside{
 float: right;
-width: 200px;
+width: 25%;/*200px*/
 /* 	margin: 0 0 20px 0; */
 text-align: right;
 padding: 3px 20px;
@@ -182,13 +197,18 @@ padding: 0;
 }
 
 .gallery li{
+width:25%;
 float: right;
+}
+
+.gallery li img{
+max-width: 100%;
 }
 
 div #article{
 text-align: justify;
 -moz-column-count: 2;
--moz-column-gap: 20px;
+-moz-column-gap: 1.25em;
 -moz-column-rule: 1px solid #c4c8cc;
 -webkit-column-count: 3;
 -webkit-column-gap: 24px;
@@ -211,8 +231,8 @@ text-align: center;
 }
 
 /*----- Table -----*/
-table{
-width: 720px;
+table{/*width by 960 padding by 720(initial width of table)*/
+width: 80%/*720px*/;
 border-collapse: collapse;
 }
 
@@ -226,7 +246,7 @@ caption-side: bottom;
 }
 
 table tr th{
-padding: 5px;
+padding: 0.694444%;/*5px;*/
 background: #f5ee30;
 border: 1px solid #ddd;
 font-size: .9em;
@@ -242,7 +262,7 @@ background: #eee;
 }
 
 table tr td{
-padding: 5px;
+padding: 0.694444%;/*5px;*/
 border: 1px solid #ddd;
 font-size: .9em;
 }
@@ -256,22 +276,22 @@ color: #f5ee30;
 }
 
 /*----- Contact Form -----*/
-form div{
-margin-left: 16px;
+form div{/*width by 960 padding by 554(initial width of form)*/
+margin-left: 1.666667%;/*16px;*/
 }
 
 form label{
 display: block;
-margin-right: 20px;
+margin-right: 20.83333%;/*20px;*/
 float: left;
 text-align: right;
-width: 80px;
+width: 8.333333%;/*80px;*/
 }
 
 form input, form select, form textarea{
-width: 554px;
-padding: 2px;
-margin-bottom: 20px;
+width: 73.285199%;/*554px;*/
+padding: 0.361011%;/*2px;*/
+margin-bottom: 2.083333%;/*20px;*/
 background: #fefefe;
 border-left: 1px solid #aaa;
 border-top: 1px solid #aaa;
@@ -286,25 +306,25 @@ background: #ffd;
 }
 
 form select{
-width: 160px;
+width: 16.666667%;/*28.880866%;/*160px;*/
 }
 
 form select option{
-padding: 0 6px 0 4px;
+padding: 0 1.083032%;/*6px*/ 0 0.722022%;/*4px;*/
 }
 
 form #agreement{
-width: 16px;
+width: 1.666667%;/*16px;*/
 }
 
 form p{
-margin: 0 0 15px 0;
+margin: 0 0 1.5625%/*15px*/ 0;
 }
 
 
-form button{
-margin: 20px 0 0 99px; 
-width: 100px; 
+form button{/* width are divided by 960 padding by 100(inital width of form button)*/
+width:10.416667%;/*100px;*/
+margin:2.083333%;/*20px*/ 0 0 /*99px;*/ 10.3125%;
 float: right; 
 background: #6eb4f2; /* Old browsers */
 background: -moz-linear-gradient(top,  #6eb4f2 0%, #54a4ee 50%, #3690f0 51%, #1e68de 100%); /* FF3.6+ */
@@ -321,16 +341,16 @@ border-radius: 5px;
 -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
 box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
 color: #fff;
-font: 20px "helvetica neue", helvetica, arial, sans-serif;
+font: 1.25em "helvetica neue", helvetica, arial, sans-serif;
 line-height: 1;
-padding: 12px 0 14px 0;
+padding: 0.12%/*12px*/ 0 0.14%/*14px*/ 0;
 text-align: center;
 text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8);
 }
 
 form button{
 font-family: Arial, Helvetica, sans-serif;
-font-size: 14px;
+font-size: .88em;
 color: #123d54;
 padding: 10px 20px;
 background: -moz-linear-gradient(top,#f5ee30 0%,#abab57);
@@ -359,7 +379,7 @@ cursor: pointer;
 /*----- Footer -----*/
 footer{
 clear: both;
-padding-bottom: 10px;
+padding-bottom: 1.041667%; /*10px;*/
 font-size: .9em;
 text-align: center;
 }
@@ -370,4 +390,32 @@ color: #000000;
 
 footer a:hover{
 color: #f5ee30;
+}
+
+
+/*----- Media Queries -----*/
+
+/* Tablet Portrait size to standard 960 (device and browsers)*/
+@meida screen and (min-width:768px) and (max-width:959px){
+#wrapper{
+background-color: red;
+}
+
+}
+
+/* Mobile Landscape size to Tablet Portrait (device and browsers)*/
+@meida only screen and (min-width:480px) and (max-width:767px){
+#wrapper{
+background-color: blue;
+}
+}
+
+
+/* Mobile Portrait size to Mobile Landscape (device and browsers)*/
+@meida only screen and (max-width:479px){
+#wrapper{
+background-color: green;
+}
+
+
 }
