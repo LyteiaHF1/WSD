@@ -2,7 +2,7 @@
 html{
 background-image: url('../images/bg.jpg');
 max-width: 960px;
-margin: 1.25em auto;
+margin:20px auto;
 overflow:hidden;
 overflow-x: auto;
 overflow-y: auto;
@@ -62,7 +62,7 @@ float: left;
 width: 10%;/*100px;*/
 font:bold 11px/30px Verdana, Arial, Helvetica, sans-serif;
 text-transform:uppercase;
-padding:0 34px;
+padding:0 3%;/*34px;*/
 }
 
 #nav ul li a{
@@ -194,7 +194,7 @@ float: right;
 width: 25%;/*200px*/
 /* 	margin: 0 0 20px 0; */
 text-align: right;
-padding: 3px 20px;
+padding: 1.5%;/*3px*/ 0.1%;/*20px;*/
 }
 
 .gallery ul{
@@ -242,7 +242,7 @@ border-collapse: collapse;
 }
 
 table caption{
-padding: 20px 0 10px 0;
+padding: 2.777778%;/*20px*/ 0 1.388889%;/*10p*/ 0;
 /* 	font-weight: bold; */
 /* 	font-size: 1.1em; */
 text-align: left;
