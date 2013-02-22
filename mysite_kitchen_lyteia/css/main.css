@@ -397,6 +397,8 @@ footer a:hover{
 color: #f5ee30;
 }
 
+
+
 /*----- Media Queries -----*/
 
 /* Tablet Portrait size to standard 960 (device and browsers)*/
@@ -405,13 +407,14 @@ html{
 background-image: none; 
 }
 #wrapper{
-width: auto;
+width: 95%;
 margin: auto;
 /*background-image: none;
 background-color:blue;*/
 }
 
 nav{
+position: static;
 float:none;
 width: auto;
 height: auto;
@@ -421,10 +424,15 @@ height: auto;
 -moz-column-count: 1;
 -moz-column-gap: 0;
 -moz-column-rule: 0;
--webkit-column-count: 0;
+-webkit-column-count: 1;
 -webkit-column-gap: 0;
 -webkit-column-rule: 0;
 text-align: left;
+}
+
+iframe {
+width: 100%;
+height: auto;
 }
 
 }
@@ -446,51 +454,106 @@ margin: auto;
 -moz-column-count: 1;
 -moz-column-gap: 0;
 -moz-column-rule: 0;
--webkit-column-count: 0;
+-webkit-column-count: 1;
 -webkit-column-gap: 0;
 -webkit-column-rule: 0;
 text-align: left;
 }
 
 nav{
+position: static;
 float:none;
 width: auto;
 height: auto;
+}
+
+iframe {
+width: 100%;
+height: auto;
+min-height: 300px;
 }
 
 }
 
 /* Mobile Portrait size to Mobile Landscape (device and browsers)*/
 @media only screen and (max-width:479px){
-html{
+/*html{
 background-image: none; 
-}
+}*/
 
 #wrapper{
 width: auto;
 margin: auto;
 /*width: 400px;*/
 background-image: none;
-background-color:#232323;
+background-color:#fff;
 }
 
-nav{
-float:none;
-width: auto;
+header{
+overflow: hidden;
+background:url('../images/mobile_header.jpg') no-repeat;
+width:100%;
 height: auto;
 }
 
-#gallery li{
-float: none;
+#header_wrap{
+width:100%;
+height: auto;
+background-size: 100%;
+}
+
+nav{
+position: static;
+
+}
+
+.video_style{
+background-color: #fff;
+margin: auto;
+opacity: 1.0;
+width: auto;
+}
+
+iframe{
+width: 100%;
+min-height: 250px;
+border: none;
+}
+
+table{
+width: 100%;
+}
+
+aside{
+float: left;
+width: 50%;
+text-align: left;
+/*padding: 1.5%/*3px*/ 1%;/*20px;*/
+padding: 0;
+}
+
+h1, h2, h3, h4{
+text-align: left;
+}
+
+.gallery ul{
+padding: 0;
+}
+
+.gallery li{
+float: left;
 }
 
 #columns{
 -moz-column-count: 1;
 -moz-column-gap: 0;
 -moz-column-rule: 0;
--webkit-column-count: 0;
+-webkit-column-count: 1;
 -webkit-column-gap: 0;
 -webkit-column-rule: 0;
+text-align: left;
+}
+footer{
 text-align: left;
 }
 
