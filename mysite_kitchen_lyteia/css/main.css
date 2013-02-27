@@ -477,8 +477,6 @@ footer{
 text-align: left;
 }
 
-
-
 }
 
 /* Mobile Landscape size to Tablet Portrait (device and browsers)*/
@@ -676,6 +674,13 @@ text-align: left;
 section p{
 text-align: left;
 }
+
+/**** Form ****/
+form button{
+-webkit-appearance: none;
+}
+
+/**** Footer ****/
 
 footer{
 text-align: left;
