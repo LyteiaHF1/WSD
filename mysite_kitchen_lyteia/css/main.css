@@ -574,32 +574,32 @@ margin: auto;
 /*background-color:#fff;*/
 }
 
-#header_wrap{
+/*#header_wrap{
 width:100%;
 padding: 0;
 margin: 0;
-background-size: 100%;
+background-size: 100%;*/
 }
 
 header{
-width:50%;
+/*width:50%;
 height: auto;
 padding: 0;
 margin: 0;
-overflow: hidden;
+overflow: hidden;*/
 background:url('../images/mobile_header.jpg') no-repeat center;
 }
 
 
 nav ul{
 width: 100%;
-margin: 0;
+/*margin: 0;*/
 background: none;
 }
 
 nav ul li{
 width: 50%;
-padding: 0;
+/*padding: 0;*/
 }
 
 #nav ul li a:hover{ 
