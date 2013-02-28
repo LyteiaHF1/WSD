@@ -4,8 +4,10 @@ background-image: url('../images/bg.jpg');
 max-width: 960px;
 margin:20px auto;
 overflow:hidden;
-overflow-x: auto;
-overflow-y: auto;
+overflow: -moz-scrollbars-vertical; 
+overflow-y: scroll;
+/*overflow-x: auto;
+overflow-y: auto;*/
 text-align:center;
 font: .8125em/1 verdana, arial, sans-serif;
 color: #424242;
@@ -436,7 +438,11 @@ color: #f5ee30;
 	font-weight: normal;
 	text-align: left;
 	}
-
+	
+	.kicks h3{
+	text-align: center;
+	}
+	
 	/*iframe {
 	width: 100%;
 	height: auto;
@@ -515,6 +521,10 @@ color: #f5ee30;
 	h1, h2, h3, h4, p {
 	font-weight: normal;
 	text-align: left;
+	}
+	
+	.kicks h3{
+	text-align: center;
 	}
 	
 	/*iframe {
@@ -672,6 +682,12 @@ color: #f5ee30;
 	padding: 1%;
 	margin: 3%;
 	}
+	
+	#gallery{
+	width: 100%;
+	padding:0;
+	}
+
 
 	footer{
 	text-align: left;
